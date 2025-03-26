@@ -11,10 +11,9 @@ print("\n")
 print("Predictions: ")
 print(df_test.head(20))
 
-#saving file
 try:
     df_test.to_csv('titanic_predictions.csv', index=False)
     print("\n")
-    print("File saved as titanic_predictions.csv")
+    print("File saved as predictions.csv")
 except:
     print("Error saving file")
