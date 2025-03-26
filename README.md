@@ -19,7 +19,7 @@ The project is organized as follows:
 
 ## Data Source
 
-The training and test data are assumed to be downloaded from Kaggle's Space Titanic competition (or a similar platform). Due to file size constraints and best practices, the data files are *not* stored directly in this repository. Instead, the code reads the data directly from the raw github URLs.
+The training and test data are downloaded from Kaggle' website. Due to file size constraints and best practices, the data files are *not* stored directly in this repository. Instead, the code reads the data directly from the raw github URLs.
 
 ## Dependencies
 
