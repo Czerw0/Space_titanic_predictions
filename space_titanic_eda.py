@@ -3,8 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-file_path = r"C:\Users\karol\OneDrive\SWPS\semestr 4\wprowadzenie do SI\space_titanic_train.csv"
-df_train = pd.read_csv(file_path)
+csv_url = "https://raw.githubusercontent.com/<Czerw0>/<Space_titanic_predictions>/main/space_titanic_train.csv"
+
+try:
+    df_train = pd.read_csv(csv_url)
+    print("File successfully read from GitHub!")
+except Exception as e:
+    print(f"Error reading file from GitHub: {e}")
 
 print(df_train.head())
 print("\n")
