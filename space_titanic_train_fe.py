@@ -10,6 +10,13 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import MinMaxScaler
 
+csv_url = "https://raw.githubusercontent.com/<Czerw0>/<Space_titanic_predictions>/main/space_titanic_train.csv"
+try:
+    df_train = pd.read_csv(csv_url)
+    print("File successfully read from GitHub!")
+except Exception as e:
+    print(f"Error reading file from GitHub: {e}")
+
 df_train = df_train.drop(['PassengerId', 'Name', 'Cabin'], axis=1)
 
 # defining X and y
